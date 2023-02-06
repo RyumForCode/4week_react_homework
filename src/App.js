@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import ContentsList from "./components/ContentsList";
+import './App.css'
 
 const App = () => {
 
@@ -63,16 +64,17 @@ const App = () => {
 
   return (
     <div className = 'container'>
-      <div>
-        <form onSubmit = {onSubmit}>
-          <label htmlFor = {title}>Title</label>
-          <input value = {title} type = 'text' name = {title} onChange = {onTitleChange} ref = {inputFocus} required/>
-          <label htmlFor = {desc}>Description</label>
-          <input value = {desc} type = 'text' name = {desc} onChange = {onDescChange} required/>
-          <input type = 'submit' value = 'Add'></input>
+      <h1 className = 'topTitle'>My Todo List</h1>
+      <div className = 'input-container'>
+        <form onSubmit = {onSubmit} className = 'submit-form'>
+          <label htmlFor = {title} className = 'label-line'>Title</label>
+          <input value = {title} type = 'text' name = {title} onChange = {onTitleChange} ref = {inputFocus} className = 'input-box' placeholder = 'Please input your title.' required/>
+          <label htmlFor = {desc} className = 'label-line'>Description</label>
+          <input value = {desc} type = 'text' name = {desc} onChange = {onDescChange} className = 'input-box' placeholder = 'Please input your description.' required/>
+          <input type = 'submit' value = 'Add' className = 'submit-button'></input>
         </form>
       </div>
-      <div>
+      <div className = 'contentsList-box'>
         <ContentsList obj = {obj} onRemove = {onRemove} onToggle = {onToggle}/>
       </div>
     </div>

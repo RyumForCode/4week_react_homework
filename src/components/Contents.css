@@ -1,0 +1,61 @@
+.contents-box {
+    width : 240px;
+    background-color : white;
+    padding : 1rem;
+    margin-top : 1rem;
+    border-radius : 0.25rem;
+    box-shadow : 0px 0px 1rem rgba(0, 0, 0, .15);
+    word-wrap : break-word;
+}
+
+.title{
+    font-size : 1.5rem;
+    font-weight : 700;
+}
+
+.desc {
+    font-size : 1rem;
+    font-weight : 400;
+    margin-top : 0.5rem;
+}
+
+.button-container {
+    display : flex;
+    justify-content: space-between;
+    margin-top : 0.5rem;
+}
+
+.removeButton {
+    width : 48%;
+    border : none;
+    height : 2rem;
+    border-radius : 0.25rem;
+    background-color : rgb(255, 59, 48);
+    color : white;
+    font-size : 1rem;
+    font-weight : 700;
+    box-shadow : 0px 0px 1rem rgba(0, 0, 0, .15);
+    transition : 200ms;
+}
+
+.removeButton:hover {
+    background-color : rgb(255, 133, 126);
+}
+
+
+.statButton {
+    width : 48%;
+    border : none;
+    height : 2rem;
+    border-radius : 0.25rem;
+    background-color : rgb(52, 199, 89);
+    color : white;
+    font-size : 1rem;
+    font-weight : 700;
+    box-shadow : 0px 0px 1rem rgba(0, 0, 0, .15);
+    transition : 200ms;
+}
+
+.statButton:hover {
+    background-color : rgb(120, 210, 143);
+}
