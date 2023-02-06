@@ -1,0 +1,8 @@
+.container {
+    display : flex;
+    margin : auto;
+    align-items : center;
+    height : 512px;
+    width : 60%;
+    border : 1px solid black;
+}
