@@ -60,6 +60,11 @@
     outline-offset: -2px;
 }
 
+.input-box::placeholder {
+    font-weight : 400;
+    color :rgb(180, 180, 180);
+}
+
 .submit-button {
     padding : 0 1rem;
     border : none;
