@@ -50,7 +50,6 @@ const App = () => {
     setDesc('');
     counter.current += 1;
     inputFocus.current.focus();
-    console.log(obj);
   }
 
   // Remove control

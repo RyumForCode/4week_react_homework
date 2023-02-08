@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Children } from "react";
 import Contents from "./Contents";
 import './ContentsList.css'
 
-const ContentsList = ({ obj, onRemove, onToggle }) => {
+const ContentsList = ({ obj, onRemove, onToggle, children }) => {
     return (
         <div className = 'list-container'>
             <h1 className = 'list-title'>Doing</h1>
